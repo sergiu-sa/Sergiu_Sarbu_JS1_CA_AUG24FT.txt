@@ -3,7 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GameHub - Your Gaming Marketplace</title>
+    <link rel="stylesheets" href = "./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8z4+2e5c5a5e5b5e5b5e5b5e5b5e5b5e5b"/> 
   </head>
-  <body></body>
+  <body>
+    <!-- Header with navigation  -->
+     <header>
+      <div class=" container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>GameHub</h1>
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="#" id="categories-dropdown">Categories</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="cart-icon">
+            <a href="./checkout/index.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+     </header>
+
+     <!--Main content section -->
+     <main>
+      <div class="container">
+        <section class="hero">
+          <div class="hero-content">
+            <h2> Find Your Next Gamming Adventure</h2>
+            <p>Explore our vast collection of games for all platforms</p>
+          </div>
+        </section>
+
+        <!--Filter section-->
+        <section class="filters">
+          <div class="filter-container">
+            <div class="filter-group">
+              <label for="category-filter">Category:</label>
+              <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="rpg">RPG</option>
+                <option value="strategy">Strategy</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="genre-filter">Genre</label>
+              <select id="genre-filter">
+                <option value="all">All Genres</option>
+                <option value="pc">PC</option>
+                <option value="console">Console</option>
+                <option value="mobile">Mobile</option>
+              </select>
+          </div>
+          <div class="filter-group">
+            <label for="platform-filter">Platform</label>
+            <select id="platform-filter">
+              <option value="all">All Platforms</option>
+              <option value="windows">Windows</option>
+              <option value="xbox">Xbox</option>
+              <option value="playstation">PlayStation</option>
+              <option value="nintendo">Nintendo</option>
+          </div>
+         </div> 
+        </section>
+
+        <!--Loadin indicator-->
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <p>Loading games...</p>
+        </div>
+
+        <!--Product section -->
+        <section class="products">
+          <h2>Features Games</h2>
+          <div class="products-grid" id="products-container">
+
+
+            <div class="product-card placeholder">
+              <div class="product-image"></div>
+              <div class="product-info">
+                <h3 class="product-title"></h3>
+                <p class="product-price"
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+     </main>
+
+     <!--Footer section -->
+     <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>GaqmeHub</h2>
+            <p>Your Gaming Marketplace</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Checkout</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p><i class="fas fa-envelope"></i>Support@gamehub.com</p>
+            <p><i class="fas fa-phone"></i>+47 45678900</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 GameHub. All rights reserved.</p>
+        </div>
+      </div>
+     </footer>
+
+      <!-- JavaScript file -->
+       <script src="./js/main.js"></script>
+  </body>
 </html>
