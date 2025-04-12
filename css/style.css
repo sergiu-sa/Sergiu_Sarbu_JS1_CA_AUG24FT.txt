@@ -298,7 +298,7 @@ loading-spinner {
 }
 
 .product-title {
-  font-sixe: 1.2rem;
+  font-size: 1.2rem;
   margin-bottom: var(--spacing-xs);
   white-space: nowrap;
   overflow: hidden;
