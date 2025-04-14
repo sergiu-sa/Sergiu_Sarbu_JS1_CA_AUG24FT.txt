@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product details page for GameHub" />
+    <meta name="keywords" content="GameHub, product details, gaming" />
+    <title>Product Details | GameHub</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header with navigation  -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>GameHub</h1>
+          </div>
+          <nav aria-label="Main navigation">
+            <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#" id="categories-dropdown">Categories</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="cart-icon">
+            <a href="./checkout/index.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Main Content section   -->
+    <main>
+      <div class="container">
+        <!--- Breadcrumb  navigation-->
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> &gt;
+          <span id="product-category">Category</span> &gt;
+          <span id="product-name">Product Name</span>
+        </div>
+
+        <!--Loadin indicator-->
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <p>Loading games...</p>
+        </div>
+
+        <!--Product details section-->
+        <section class="product-details">
+          <div class="product-details-container">
+            <!--Product image gallery  -->
+            <div class="product-gallery">
+              <div class="main-image">
+                <img id="product-main-image" src="#" alt="Product Image" />
+              </div>
+              <div class="thumbnail-images" id="thumbnail-images">
+                <img class="thumbnail" src="#" alt="Thumbnail 1" />
+                <img class="thumbnail" src="#" alt="Thumbnail 2" />
+                <img class="thumbnail" src="#" alt="Thumbnail 3" />
+              </div>
+            </div>
+
+            <!--Product information  -->
+            <div class="product-info">
+              <h1 id="product-title">Game Title</h1>
+              <div class="product-meta">
+                <span class="product-category" id="display-category"
+                  >Category</span
+                >
+                <span class="product-platform" id="display-platform"
+                  >Platform</span
+                >
+              </div>
+              <div class="product-price" id="display-price">$0.00</div>
+              <div class="product-rating">
+                <span class="stars" id="display-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="review-count" id="display-reviews">0 Reviews</span>
+              </div>
+              <div class="product-description" id="display-description">
+                <h3>Description</h3>
+                <p>Product description will be loaded here.</p>
+              </div>
+              <div class="product-actions">
+                <div class="quantity-selector">
+                  <button id="decrease-quantity">-</button>
+                  <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                    max="10"
+                  />
+                  <button id="increase-quantity">+</button>
+                </div>
+                <button class="add-to-cart" id="add-to-cart-btn">
+                  <i class="fas fa-shopping-cart"></i>Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Product details section-->
+        <section class="product-tabs">
+          <div class="tabs">
+            <button class="tab-button active" data-tab="details">
+              Details
+            </button>
+            <button class="tab-button" data-tab="specifications">
+              Specifications
+            </button>
+            <button class="tab-button" data-tab="reviews">Reviews</button>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="details">
+              <h3>Game Details</h3>
+              <p id="details-content">Details will be loaded here.</p>
+            </div>
+            <div class="tab-pane" id="specifications">
+              <h3>Specifications</h3>
+              <ul id="specs-list"></ul>
+            </div>
+
+            <div class="tab-pane" id="reviews">
+              <h3>User Reviews</h3>
+              <div id="reviews-container">
+                <p>No reviews yet.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Related products section-->
+        <section class="related-products">
+          <h2>You might also like</h2>
+          <div class="products-grid" id="related-products-container">
+            <!-- Related products will be dynamically loaded here -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--Footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>GameHub</h2>
+            <p>Your Gaming Marketplace</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Checkout</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p><i class="fas fa-envelope"></i>support@gamehub.com</p>
+            <p><i class="fas fa-phone"></i>+47 45678900</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 GameHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

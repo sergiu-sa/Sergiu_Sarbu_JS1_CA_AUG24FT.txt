@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Checkout | GameHub</title>
+    <link rel="stylesheet" href = "/src/css/style.css"/>
+    
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+  </head>
+<body>
+    <!-- Header with navigation  -->
+     <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>GameHub</h1>
+          </div>
+          <nav aria-label="Main navigation">
+            <ul class="nav-links">
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="#" id="categories-dropdown">Categories</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="cart-icon">
+            <a href="./checkout/index.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+     </header>
+
+        <!--Main content section -->
+        <main>
+            <div class="container">
+                <section class="checkout-header">
+                    <h1>Your Shopping Cart</h1>
+                    <p class="cart-steps">
+                        <span class="step active">Cart</span>&gt;
+                        <span class="step">Shipping</span>&gt;
+                        <span class="step">Payment</span>&gt;
+                        <span class="step">Confirmation</span>
+                    </p>
+                </section>
+
+                <!-- Loading indicator-->
+                 <div class="loading-container">
+                    <div class="loading-spinner"></div>
+                    <p>Loading cart items...</p>
+                 </div>
+
+                 <!--Empty cart message -->
+                 <div class="empty-cart-message" style="display: none;">
+                    <i class="fas fa-shopping-cart fa-4x"></i>
+                    <h2>Your cart is empty</h2>
+                    <p>Looks like you haven't added any games to your cart yet.</p>
+                    <a href="../index.html" class="btn">Continue Shopping</a>
+                 </div>
+
+                 <!--Checkout content-->
+                 <section class="checkout-content">
+                    <div class="cart-items">
+                        <h2>Cart Items</h2>
+                        <div class="cart-list" id="cart-items-container">
+                            <!-- Cart items will be dynamically inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Discount</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                        </div>
+
+                        <div class="promo-code">
+                            <imput type="text" id="promo-code" placeholder="Enter promo code">
+                            <button id="apply-promo">Apply </button>
+                        </div>
+
+                        <button id="checkout-btn" class="btn-primary">Proceed to Checkout</button>
+                        <a href="../index.html" class="continue-shopping">Continue Shopping</a>
+                    </div>
+                 </section>
+            </div>
+        </main>
+        
+    <!--Footer section -->
+     <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>GameHub</h2>
+            <p>Your Gaming Marketplace</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Checkout</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p><i class="fas fa-envelope"></i>Support@gamehub.com</p>
+            <p><i class="fas fa-phone"></i>+47 45678900</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 GameHub. All rights reserved.</p>
+        </div>
+      </div>
+     </footer>
+     <!-- JavaScript file -->
+       <script src="../js/main.js"></script>
+</body>
+</html>
