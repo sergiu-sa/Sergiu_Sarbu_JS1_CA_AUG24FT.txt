@@ -19,4 +19,3 @@
 │   │   └── cart.js                ← Cart helper (add/remove items, localStorage)
 ├── .gitignore                     ← Ignore node_modules, dist, etc.
 ├── package.json                   ← Vite config + dependencies
-├── vite.config.js                 ← Optional: base URL config
