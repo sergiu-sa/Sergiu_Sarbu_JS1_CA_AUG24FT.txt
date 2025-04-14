@@ -58,7 +58,7 @@ img {
   height: auto;
 }
 
-button, .btn-primmary, .btn-secondary {
+button, .btn-primary, .btn-secondary {
   cursor: pointer;
   border: none;
   border-radius: var(--border-radius);
@@ -68,12 +68,12 @@ button, .btn-primmary, .btn-secondary {
   transition: all var(--transition-speed) ease;
 }
 
-.btn-primmary {
+.btn-primary {
   background-color: var(--primary-color);
   color: white;
 }
 
-.btn-primmary:hover {
+.btn-primary:hover {
   background-color: var(--primary-dark);
 }
 
@@ -90,7 +90,7 @@ button, .btn-primmary, .btn-secondary {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing--md);
+  padding: var(--spacing-md);
 }
 
 /*-- Header styles --*/
@@ -260,13 +260,13 @@ main {
   padding: var(--spacing-lg);
   /* display: none; */
 }
-loading-spinner {
+.loading-spinner {
   border: 4px solid var(--gray-color);
   border-top: 4px solid var(--primary-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  margin: 0 auto var(--spacing--md);
+  margin: 0 auto var(--spacing-md);
   animation: spin 1s linear infinite;
 }
 
@@ -301,9 +301,9 @@ loading-spinner {
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px var(--shadow-color);
   overflow: hidden;
-  transition: transform var(--transition-speed) ease;
-  box-shadow: var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
+
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px var(--shadow-color);
@@ -437,9 +437,9 @@ loading-spinner {
   flex: 1;
 }
 
-.produc-info h2 {
-  font-size: 2rem;
-  margin-bottom: var(--spacing-sm);
+.product-info h1 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
 }
 
 .product-meta {
@@ -450,7 +450,7 @@ loading-spinner {
 }
 
 .product-price {
-  font-size: 1.8 rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--primary-color);
   margin-bottom: var(--spacing-md);
@@ -540,6 +540,16 @@ loading-spinner {
   color: var(--primary-color);
 }
 
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
 .tab-pane {
   display: none;
   padding: var(--spacing-md) 0;
@@ -606,11 +616,10 @@ loading-spinner {
 }
 
 .cart-list {
-  width: 100px;
-  height: 100px;
+  background-color: white;
   border-radius: var(--border-radius);
   overflow: hidden;
-  margin-right: var(--spacing-md);
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .item-image img {
@@ -623,7 +632,7 @@ loading-spinner {
   flex: 1;
 }
 
-item-title {
+.item-title {
   font-weight: 500;
   margin-bottom: var(--spacing-xs);
 }
@@ -640,7 +649,7 @@ item-title {
   margin-top: var(--spacing-sm);
 }
 
-item-quantity {
+.item-quantity {
   display: flex;
   align-items: center;
 }
@@ -723,9 +732,10 @@ item-quantity {
   color: white;
   padding: var(--spacing-sm) var(--spacing-md);
   border: none;
-  border-radius: 0 var(--border-radius var--border-radius) 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
   cursor: pointer;
 }
+
 
 .promo-code button:hover {
   background-color: var(--primary-dark);
@@ -807,33 +817,33 @@ item-quantity {
   margin-bottom: var(--spacing-md);
 }
 
-.purchase-items {
+.purchased-items {
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
   padding: var(--spacing-sm) 0;
   border-bottom: 1px solid var(--gray-color); 
 }
-.purchase-items:last-child {
+.purchased-items:last-child {
   border-bottom: none;
 }
 
-.purchase-items img {
+.purchased-items img {
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: var(--border-radius);
 }
 
-.purchase-items-info {
+.purchased-items-info {
   flex: 1;
 }
 
-.purchase-items-title {
+.purchased-items-title {
   font-weight: 500;
 }
 
-.purchase-items-price {
+.purchased-items-price {
   color: var(--primary-color);
   font-weight: bold;
 }
@@ -841,8 +851,9 @@ item-quantity {
 .confirmation-buttons {
   display: flex;
   justify-content: center;
-  margin-top: var(--spacing-lg) 0;
+  margin: var(--spacing-lg) 0;
 }
+
 /* CONFIRMATION PAGE STYLES- end */
 
 
@@ -877,7 +888,7 @@ footer {
 }
 
 .footer-links h3,
-.footer-contact he {
+.footer-contact h3 {
   margin-bottom: var(--spacing-sm);
   color: white;
 }
