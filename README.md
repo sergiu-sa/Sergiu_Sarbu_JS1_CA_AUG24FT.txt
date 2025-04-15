@@ -1,4 +1,4 @@
-# 🕹️ GameHub – JavaScript 1 Resit Assignment
+# GameHub – JavaScript 1 Resit Assignment
 
 **Student:** Sergiu Sarbu  
 **Course:** Front-End Development – Noroff  
@@ -7,7 +7,7 @@
 
 ---
 
-## 📦 Folder Structure
+## Folder Structure
 
 ```
 📁 project-root/
@@ -34,7 +34,7 @@
 
 ---
 
-## ✅ Features
+##  Features
 
 - Fetches products from [Noroff GameHub API](https://api.noroff.dev/api/v1/gamehub)
 - View all products and filter by:
@@ -54,7 +54,7 @@
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - **HTML5** (semantic structure)
 - **CSS3** (custom variables, responsive layout)
@@ -64,7 +64,7 @@
 
 ---
 
-## 📚 Sources Used
+##  Sources Used
 
 - Noroff GameHub API  
 - MDN Web Docs (for `localStorage`, `fetch`, `async/await`, DOM methods)  
@@ -74,7 +74,7 @@
 
 ---
 
-## 🚀 Getting Started (Dev Mode)
+##  Getting Started (Dev Mode)
 
 ```bash
 npm install
@@ -88,7 +88,7 @@ npm run build
 
 ---
 
-## 👨‍🎓 Submitted For
+##  Submitted For
 
 Noroff | Front-End Development  
 JavaScript 1 – Resit Submission (SP1 - CA)  
