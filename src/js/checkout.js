@@ -106,7 +106,7 @@ function updateTotals() {
   document.getElementById("total").textContent = `$${totalValue.toFixed(2)}`;
 }
 
-// Proceed to confirmation
+// Confirmation
 const checkoutButton = document.getElementById("checkout-btn");
 checkoutButton.addEventListener("click", () => {
   window.location.href = "/src/pages/checkout/confirmation/index.html";

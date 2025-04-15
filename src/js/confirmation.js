@@ -3,7 +3,7 @@ import { getCart } from "./cart.js";
 export function init() {
   const cart = getCart();
 
-  // If cart is empty, redirect to home
+  // If cart is empty, return to home
   if (!cart || cart.length === 0) {
     window.location.href = "/index.html";
     return;
@@ -25,7 +25,6 @@ export function init() {
   document.getElementById("order-total").textContent = `$${total}`;
   document.getElementById("payment-method").textContent = "Credit Card";
 
-  // Render purchased items
   const purchasedContainer = document.getElementById("purchased-items");
   purchasedContainer.innerHTML = "";
 
@@ -42,7 +41,7 @@ export function init() {
     purchasedContainer.appendChild(itemDiv);
   });
 
-  // Download receipt button
+  // Download receipt 
   const receiptBtn = document.getElementById("download-receipt");
   receiptBtn.addEventListener("click", () => {
     const receipt = `GameHub Order Confirmation\n

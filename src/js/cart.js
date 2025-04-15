@@ -1,8 +1,6 @@
-// cart.js
-
 const CART_KEY = "gamehub_cart";
 
-// Get current cart from localStorage
+// Get cart from localStorage
 export function getCart() {
   const cartJSON = localStorage.getItem(CART_KEY);
   return cartJSON ? JSON.parse(cartJSON) : [];
