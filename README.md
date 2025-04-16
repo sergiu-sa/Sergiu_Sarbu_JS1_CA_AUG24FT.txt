@@ -3,7 +3,7 @@
 **Student:** Sergiu Sarbu  
 **Course:** Front-End Development – Noroff  
 **Assignment:** JS1 SP1 Resit | August 2024 Full-Time  
-**Project type:** Vite + Vanilla JavaScript e-commerce site  
+**Project type:** Vite + Vanilla JavaScript GameHub site  
 
 ---
 
@@ -57,7 +57,7 @@
 ##  Tech Stack
 
 - **HTML5** (semantic structure)
-- **CSS3** (custom variables, responsive layout)
+- **CSS** (custom variables, responsive layout)
 - **JavaScript ES Modules**
 - **Vite** (development/build tool)
 - **FontAwesome** (for icons)
