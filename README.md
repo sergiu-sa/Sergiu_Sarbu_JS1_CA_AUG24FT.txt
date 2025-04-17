@@ -63,17 +63,6 @@
 - **FontAwesome** (for icons)
 
 ---
-
-##  Sources Used
-
-- Noroff GameHub API  
-- MDN Web Docs (for `localStorage`, `fetch`, `async/await`, DOM methods)  
-- Font Awesome  
-- Vite Documentation  
- 
-
----
-
 ##  Getting Started (Dev Mode)
 
 ```bash
